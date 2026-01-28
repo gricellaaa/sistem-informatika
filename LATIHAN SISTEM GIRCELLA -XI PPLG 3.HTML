@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Informatika Akademi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e90ff, #00bfff);
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        .kotaklogin {
+            width: 320px;
+            background: white;
+            padding: 25px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 12px;
+            color: #1e90ff;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #1e90ff;
+            box-shadow: 0 0 5px rgba(30,144,255,0.5);
+        }
+
+        input[type="submit"] {
+            margin-top: 18px;
+            background: #1e90ff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background: #006fd6;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Sistem Informatika Akademi</h1>
+
+<div class="kotaklogin">
+    <form action="login.php" method="POST">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="email..." required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="password..." required>
+
+        <label for="status">Status</label>
+        <select id="status" name="status">
+            <option value="Siswa">Siswa</option>
+            <option value="Guru">Guru</option>
+        </select>
+
+        <input type="submit" value="Login">
+    </form>
+</div>
+
+</body>
+</html>
